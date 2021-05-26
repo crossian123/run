@@ -15,6 +15,7 @@
 # [START cloudrun_helloworld_service]
 # [START run_helloworld_service]
 import os
+import subprocess
 
 from flask import Flask
 
@@ -23,8 +24,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    name = os.environ.get("NAME", "World")
-    return "Hello {}!".format(name)
+    command5 = 'lscpu'
+    subprocess.check_call(command5.split())
+    res = subprocess.check_call(command5.split())
+    return "Hello {}!".format(res)
 
 
 if __name__ == "__main__":
