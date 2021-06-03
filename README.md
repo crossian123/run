@@ -1,6 +1,6 @@
 # Cloud Run Hello World Sample12
 
-This sample shows how to deploy a Hello World application to Cloud Run.
+This sample shows how to deploy a Hello World application to Cloud Run.s
 
 [![Run in Google Cloud][run_img]][run_link]
 
